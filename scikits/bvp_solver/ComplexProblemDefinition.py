@@ -36,15 +36,18 @@ class ComplexProblemDefinition(ProblemDefinition):
                 function_c,
                 boundary_conditions_c,
                 function_derivative_c = None,
-                boundary_conditions_derivative_c = None):
+                boundary_conditions_derivative_c = None,
+                num_parameters_r = 0
+                ):
         
-        self._num_ODE_c = num_parameters_c
+        self._num_ODE_c = num_ODE_c
         self._num_parameters_c = num_parameters_c
         self._num_left_boundary_conditions_c = num_left_boundary_conditions_c
         self._function_c = function_c
         self._boundary_conditions_c = boundary_conditions_c
         self._function_derivative_c = function_derivative_c
         self._boundary_conditions_derivative_c = boundary_conditions_derivative_c
+        self._num_parameters_r = num_parameters_r
 
         if self._num_parameters_c == 0:
             self._function_r = self._function_dummy
