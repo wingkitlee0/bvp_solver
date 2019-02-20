@@ -1,6 +1,6 @@
 TODO:
 
-1. Fixing installation on Windows:
+1. Fixing installation on Windows (DONE) as of commit 2171f08:
 
 ImportError: DLL
 
